@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="image/logoo.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="course.html">Cources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="image/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="blog-container">
+        <div class="blogs blogpost">
+            <div class="post">
+                <img src="image/b1.jpg" alt="">
+                <h3>Learn Web Development In The Easiest Way</h3>
+                <p>This is not just an article of the sort but a fantastic resource on what it takes to become a Web
+                    developer. It lists all the technologies and tools a Web developer should be familiar with.
+                    <br><br>
+                    The basic architecture concepts which I believe every web developer should learn and understand. If
+                    you have just started with web development, you may find it complicated, but it’s worth reading. I
+                    won’t say much, as the below diagram says it all.
+                    I always try to understand the flow before doing any change or while debugging issues. Once you know
+                    workflow like where is the input coming from, where is the logic and data, and how the response is
+                    returned makes a lot of difference in your day-to-day work.
+                    <br><br>
+                    And, If you’re looking for a complete course on web application and software architecture, I
+                    recommend checking out Web Application and Software Architecture 101. This is a useful course for
+                    anyone looking to strengthen their overall knowledge of software architecture.
+                    Front-end (or client-side) is the side of a website or software that you see and interact with as an
+                    Internet user. When website information is transferred from a server to a browser, front-end coding
+                    languages allow the website to function without having to continually “communicate” with the
+                    Internet.
+                    <br><br>
+                    Front-end code allows users to interact with a website and play videos, expand or minimize images,
+                    highlight text, and more. Web developers who work on front-end coding work on client-side
+                    development.
+                    <br><br>
+                    Back-end (or server-side) is the side that you don’t see when you use the Internet. It’s the digital
+                    infrastructure, and to non-developers, it looks like a bunch of numbers, letters, and symbols.
+                    There are more back-end coding languages than front-end languages. That’s because browsers — at the
+                    front-end — only understand HTML, CSS, and JavaScript, but a server — at the back-end — can be
+                    configured to understand pretty much any language.
+                </p>
+                <a href="#">Read Next</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <Footer></Footer> -->
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>you can trust us .we only send promo offers</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email address" name="" id="">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @2023 All right reserved | This template is made by SunilDas</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function () {
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+
+</html>
